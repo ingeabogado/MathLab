@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-foreground: #f0f0f8;
+  --color-muted-foreground: #9898b8;
+  --color-background: #0d0d14;
+}
+
+:root {
+  --background: #0d0d14;
+  --foreground: #f0f0f8;
+  --muted-foreground: #9898b8;
+  --module-dev: #00d4aa;
+  --module-fotografia: #e05c8a;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 16px;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
